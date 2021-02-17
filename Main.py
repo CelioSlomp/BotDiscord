@@ -10,6 +10,7 @@ Github: https://github.com/CelioSlomp
 import discord
 from discord.ext import commands
 import random
+from invisivel import token
 
 # Foi criado o objeto 'cliente' para setar os eventos e comandos 
 # usados posteriormente.
@@ -45,4 +46,5 @@ async def clear(ctx, quantidade=5): # Adicionar uma certa restrição para
     await ctx.channel.purge(limit=quantidade) # quem pode utilizar isso.
 
 # Aqui irá 'linkar' o código com o bot do Discord.
-cliente.run("ODEwOTU3NTg4MTg3MzE2MjI0.YCrNGw.XWsbDh2V-VNlhbZVg6qIMORPrCQ")
+cliente.run(token)
+             
